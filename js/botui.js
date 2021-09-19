@@ -22,7 +22,7 @@ function bot_ui_ini() {
     var botui = new BotUI("hello-mashiro")
     botui.message.add({
         delay: 800,
-        content: "![aleternate text](/images/emoticons/0770fb21be393ba1e4016529f222bd450c6b56a8.jpg@656.jpg)"
+        content: "![啊啦啊啦](https://gunanovo.com/images/emoticons/0770fb21be393ba1e4016529f222bd450c6b56a8.jpg@656.jpg)"
     }).then(function () {
         botui.message.add({
             delay: 1700,
