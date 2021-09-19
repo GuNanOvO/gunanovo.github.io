@@ -22,15 +22,15 @@ function bot_ui_ini() {
     var botui = new BotUI("hello-mashiro")
     botui.message.add({
         delay: 800,
-        content: "Hi, there👋"
+        content: "![aleternate text](/images/emoticons/0770fb21be393ba1e4016529f222bd450c6b56a8.jpg@656.jpg)"
     }).then(function () {
         botui.message.add({
-            delay: 1100,
-            content: "这里是 Mashiro"
+            delay: 1700,
+            content: "想知道关于我的事？"
         }).then(function () {
             botui.message.add({
-                delay: 1100,
-                content: "一个可爱的蓝孩子~"
+                delay: 1400,
+                content: "你可做好觉悟了？"
             }).then(function () {
                 botui.action.button({
                     delay: 1600,
@@ -38,7 +38,7 @@ function bot_ui_ini() {
                         text: "然后呢？ 😃",
                         value: "sure"
                     }, {
-                        text: "少废话！ 🙄",
+                        text: "没...还没有.",
                         value: "skip"
                     }]
                 }).then(function (a) {
