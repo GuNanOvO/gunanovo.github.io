@@ -22,7 +22,7 @@ function bot_ui_ini() {
     var botui = new BotUI("hello-mashiro")
     botui.message.add({
         delay: 800,
-        content: "![...](https://gunanovo.com/images/emoticons/0770fb21be393ba1e4016529f222bd450c6b56a8.jpg)"
+        content: "啊啦啊啦~"
     }).then(function () {
         botui.message.add({
             delay: 1700,
@@ -30,15 +30,15 @@ function bot_ui_ini() {
         }).then(function () {
             botui.message.add({
                 delay: 1400,
-                content: "你可做好觉悟了？"
+                content: "你可要做好觉悟了！"
             }).then(function () {
                 botui.action.button({
                     delay: 1600,
                     action: [{
-                        text: "然后呢？ 😃",
+                        text: "想知道！",
                         value: "sure"
                     }, {
-                        text: "没...还没有.",
+                        text: "没...还没有做好觉悟",
                         value: "skip"
                     }]
                 }).then(function (a) {
@@ -50,8 +50,8 @@ function bot_ui_ini() {
     });
     var sure = function () {
             botui.message.add({
-                delay: 600,
-                content: "😘"
+                delay: 2700,
+                content: "哦~这样呀~那就跟你说说吧~"
             }).then(function () {
                 secondpart()
             })
@@ -59,95 +59,42 @@ function bot_ui_ini() {
         end = function () {
             botui.message.add({
                 delay: 600,
-                content: "![...](https://view.moezx.cc/images/2018/05/06/a1c4cd0452528b572af37952489372b6.md.jpg)"
+                content: "![...](/images/emoticons/cbb9e30bddf814f81467b205f8d5098e8a5147a5_raw.jpg)"
             })
         },
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: "目前就读于上海财经大学"
+                content: "我叫 顾南，英文昵称叫做 GuNanOvO"
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
-                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
+                    content: "是热爱计算机技术的一只咸鱼鱼"
                 }).then(function () {
                     botui.message.add({
-                        delay: 1200,
-                        content: "因为数据分析也需要Coder嘛"
+                        delay: 1000,
+                        content: "最喜欢的是：动漫、轻音乐"
                     }).then(function () {
                         botui.message.add({
-                            delay: 1500,
-                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
+                            delay: 1800,
+                            content: "最讨厌的是：访问网页时的Time out与Connection reset"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
+                                content: "希望的是：自己能从这个世界上消失"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师"
+                                    content: "自己对自己现状的认为是："
                                 }).then(function () {
-                                    botui.action.button({
-                                        delay: 1100,
-                                        action: [{
-                                            text: "为什么叫Mashiro呢？ 🤔",
-                                            value: "why-mashiro"
-                                        }]
-                                    }).then(function (a) {
-                                        thirdpart()
+                                    botui.message.add({
+                                        delay: 1800,
+                                        content: "![...](/images/emoticons/1632042034541.jpeg)![...](/images/emoticons/1632042036077.jpeg)![...](/images/emoticons/1632042037464.jpeg)![...](/images/emoticons/1632042038672.jpeg)![...](/images/emoticons/1632042039857.jpeg)![...](/images/emoticons/1632042041119.jpeg)![...](/images/emoticons/1632042042140.jpeg)![...](/images/emoticons/1632042043200.jpeg)"
                                     })
                                 })
                             })
                         })
                     })
-                })
-            })
-        },
-        thirdpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "Mashiro以及站名都来自一部动画，因为和主角有一样的爱好~ 如果有兴趣可以找找首页上的视频~"
-            }).then(function () {
-                botui.action.button({
-                    delay: 1500,
-                    action: [{
-                        text: "为什么是白猫呢？ 🤔",
-                        value: "why-cat"
-                    }]
-                }).then(function (a) {
-                    fourthpart()
-                })
-            })
-        },
-        fourthpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "因为对GitHub有种执念… "
-            }).then(function () {
-                botui.message.add({
-                    delay: 1100,
-                    content: "而且我真的是猫控！"
-                }).then(function () {
-                    botui.action.button({
-                        delay: 1500,
-                        action: [{
-                            text: "域名有什么含意吗？(ง •_•)ง",
-                            value: "why-domain"
-                        }]
-                    }).then(function (a) {
-                        fifthpart()
-                    })
-                })
-            })
-        },
-        fifthpart = function () {
-            botui.message.add({
-                delay: 1E3,
-                content: "emmmm，看备案信息你就知道了=.= 本来想要zheng.xin的，但50万真买不起。。"
-            }).then(function () {
-                botui.message.add({
-                    delay: 1600,
-                    content: "那么，仔细看看我的博客吧？ ^_^"
                 })
             })
         } 
