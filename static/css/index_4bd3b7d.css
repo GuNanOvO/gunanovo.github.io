@@ -1166,7 +1166,7 @@ a.under:hover {
 .content .part5 iframe {
   border-radius: 10px;  /* 设置圆角半径 */
   overflow: hidden;    /* 隐藏超出边框的内容 */
-  width: 80%;
+  width: 70%;
 }
 
 .content .part5>iframe {
